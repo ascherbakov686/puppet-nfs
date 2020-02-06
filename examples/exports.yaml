@@ -1,0 +1,8 @@
+
+nfs::ensure: true
+nfs::ensure_running: true
+nfs::ensure_enabled: true
+nfs::exports:
+ '/shared':
+    allowed_clients:
+      '192.168.0.0/16': 'rw,async'

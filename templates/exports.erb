@@ -1,0 +1,4 @@
+<% @exports.each do |export,config| -%>
+<%= export -%> <%= config['allowed_clients'].map { |client,opt| "#{client}(#{opt})" }.join(' ') %>
+<% end -%>
+
